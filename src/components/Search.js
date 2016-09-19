@@ -2,15 +2,39 @@ import React, { Component } from 'react';
 
 var BoneImage = require('./bone.svg');
 
-const searchStyle = {
+const formStyle = {
     backgroundImage: 'url(' + BoneImage + ')',
-    width: "200px",
-    height: "200px",
     backgroundRepeat: "no-repeat",
-    padding: "40px 15px"
+    width: "300px",
+    height: "200px",
+    float: "left"
 
 };
+const inputStyle = {
+    width: "200px",
+    marginLeft: "20px",
+    marginTop: "39px",
+    height: "50px",
+    fontSize: "1em",
+    border: "none"
+};
+const buttonDivStyle = {
+    width: "50px",
+    height: "70px",
+     float: "left",
+    paddingTop: "40px"
+};
+const buttonStyle = {
+    width: "50px",
+    height: "50px",
+    backgroundColor: "#C6ED2C",
+    borderRadius: "25px",
+    color: "white",
+    textShadow: "1px 1px 1px #000000",
+    border: "1px silver solid"
+    
 
+};
 
 class Search extends Component {
     constructor(props) {
@@ -31,18 +55,19 @@ class Search extends Component {
 
     render() {
         return (
-                <div style={searchStyle}>
-                <form onSubmit={this.onFormSubmit} className="input-group">
-                <input
+                <div>
+                <form style={formStyle} onSubmit={this.onFormSubmit} className="input-group">
+                <input style={inputStyle}
             placeholder="what do you want to find?"
             className="form-control"
             onChange={this.onInputChange}
-
                 />
-                <span className="input-group-btn">
-                <button type="submit" className='btn btn-secondary'>Fetch!</button>
-                </span>
                 </form>
+                <div style={buttonDivStyle}>
+                <span className="input-group-btn">
+                <button style={buttonStyle} type="submit" className='btn btn-secondary'>Fetch!</button>
+                </span>
+                </div>
                 </div>
                 
         );
