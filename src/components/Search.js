@@ -7,16 +7,19 @@ const formStyle = {
     backgroundRepeat: "no-repeat",
     width: "300px",
     height: "200px",
-    float: "left"
+  float: "left",
+  padding: "0px",
+  outline: '1px dashed red'
 
 };
 const inputStyle = {
     width: "200px",
-    marginLeft: "20px",
+    marginLeft: "50px",
     marginTop: "39px",
     height: "50px",
-    fontSize: "1em",
-    border: "none"
+    fontSize: "16px",
+  border: "none",
+  outline: '1px dashed red'
 };
 const buttonDivStyle = {
     width: "50px",
@@ -32,7 +35,7 @@ const buttonStyle = {
     color: "white",
     textShadow: "1px 1px 1px #000000",
     border: "1px silver solid"
-    
+
 
 };
 
@@ -48,7 +51,7 @@ class Search extends Component {
     onInputChange(event) {
         this.setState({ term: event.target.value });
     }
-    
+
     onFormSubmit(event) {
         event.preventDefault();
     }
@@ -56,20 +59,21 @@ class Search extends Component {
     render() {
         return (
                 <div>
-                <form style={formStyle} onSubmit={this.onFormSubmit} className="input-group">
+            <div style={formStyle}>
+            <form onSubmit={this.onFormSubmit}>
                 <input style={inputStyle}
             placeholder="what do you want to find?"
-            className="form-control"
             onChange={this.onInputChange}
                 />
-                </form>
+            </form>
+            </div>
                 <div style={buttonDivStyle}>
-                <span className="input-group-btn">
-                <button style={buttonStyle} type="submit" className='btn btn-secondary'>Fetch!</button>
+                <span>
+                <button style={buttonStyle} type="submit">Fetch!</button>
                 </span>
                 </div>
                 </div>
-                
+
         );
     }
 }
