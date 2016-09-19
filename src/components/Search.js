@@ -1,5 +1,17 @@
 import React, { Component } from 'react';
 
+var BoneImage = require('./bone.svg');
+
+const searchStyle = {
+    backgroundImage: 'url(' + BoneImage + ')',
+    width: "200px",
+    height: "200px",
+    backgroundRepeat: "no-repeat",
+    padding: "40px 15px"
+
+};
+
+
 class Search extends Component {
     constructor(props) {
         super(props);
@@ -19,6 +31,7 @@ class Search extends Component {
 
     render() {
         return (
+                <div style={searchStyle}>
                 <form onSubmit={this.onFormSubmit} className="input-group">
                 <input
             placeholder="what do you want to find?"
@@ -30,6 +43,7 @@ class Search extends Component {
                 <button type="submit" className='btn btn-secondary'>Fetch!</button>
                 </span>
                 </form>
+                </div>
                 
         );
     }
