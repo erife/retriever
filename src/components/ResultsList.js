@@ -19,6 +19,7 @@ class ResultsList extends Component {
                 </tr>
                 </thead>
                 <tbody>
+
                 <tr>
                 <td>{this.props.items[0]['item']}</td>
                 <td>{this.props.items[0]['room']}</td>
