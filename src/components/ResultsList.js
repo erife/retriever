@@ -7,6 +7,21 @@ const TableStyle = {
     
 
 class ResultsList extends Component {
+    renderList() {
+        return this.props.items.map((item) => {
+            return (
+                    <tr key={item.item}>
+                    <td>{item.item}</td>
+                    <td>{item.room}</td>
+                    <td>{item.zone}</td>
+                    <td>{item.location}</td>
+                    </tr>
+            );
+        });
+    }
+                
+
+
     render () {
         return (
                 <table style={TableStyle}>
@@ -19,19 +34,7 @@ class ResultsList extends Component {
                 </tr>
                 </thead>
                 <tbody>
-
-                <tr>
-                <td>{this.props.items[0]['item']}</td>
-                <td>{this.props.items[0]['room']}</td>
-                <td>{this.props.items[0]['zone']}</td>
-                <td>{this.props.items[0]['location']}</td>
-                </tr>
-                <tr>
-                <td>{this.props.items[1]['item']}</td>
-                <td>{this.props.items[1]['room']}</td>
-                <td>{this.props.items[1]['zone']}</td>
-                <td>{this.props.items[1]['location']}</td>
-                </tr>
+                {this.renderList()}
                 </tbody>
                 </table>
             
