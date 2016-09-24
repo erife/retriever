@@ -1,20 +1,60 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+const DarkTableColor = "#12284C"
+const LightTableColor = "#ADD8E6"
+
 const TableStyle = {
-    clear: "left"
+    clear: "left",
+    width: "90%",
+    margin: "auto",
+    border: "1px solid" + DarkTableColor,
+    padding: "5px",
+    borderRadius: "5px"
 };
-    
+
+const HeaderStyle = {
+    backgroundColor: DarkTableColor,
+    color: "#FFFFFF",
+};
+
+const OddCellStyle = {
+    border: "1px solid" + LightTableColor,
+    color: DarkTableColor,
+    backgroundColor: LightTableColor
+};
+
+const EvenCellStyle = {
+    border: "1px solid" + LightTableColor,
+    color: DarkTableColor,
+};
 
 class ResultsList extends Component {
+    renderHeader() {
+        return (
+                <thead>
+                <tr>
+                <th style={HeaderStyle}>Item</th>
+                <th style={HeaderStyle}>Room</th>
+                <th style={HeaderStyle}>Zone</th>
+                <th style={HeaderStyle}>Location</th>
+                </tr>
+                </thead>
+        );
+    }
+
     renderList() {
-        return this.props.items.map((item) => {
+        return this.props.items.map((item, i) => {
+            let cssClass = EvenCellStyle;
+            if(i%2===1) {
+                cssClass = OddCellStyle;
+            }
             return (
                     <tr key={item.item}>
-                    <td>{item.item}</td>
-                    <td>{item.room}</td>
-                    <td>{item.zone}</td>
-                    <td>{item.location}</td>
+                    <td style={cssClass}>{item.item}</td>
+                    <td style={cssClass}>{item.room}</td>
+                    <td style={cssClass}>{item.zone}</td>
+                    <td style={cssClass}>{item.location}</td>
                     </tr>
             );
         });
@@ -25,14 +65,7 @@ class ResultsList extends Component {
     render () {
         return (
                 <table style={TableStyle}>
-                <thead>
-                <tr>
-                <th>Item</th>
-                <th>Room</th>
-                <th>Zone</th>
-                <th>Location</th>
-                </tr>
-                </thead>
+                {this.renderHeader()}
                 <tbody>
                 {this.renderList()}
                 </tbody>
