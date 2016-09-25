@@ -1,24 +1,10 @@
-
+import all_items from '../reducers/reducer_items';
 export const FETCH_ALL_ITEMS = 'FETCH_ALL_ITEMS';
 export const FETCH_FILTERED_ITEMS = 'FETCH_FILTERED_ITEMS';
-
-const all_items = []
-
-export function fetchAll() {
-    return {
-        type: FETCH_ALL_ITEMS,
-        payload: all_items
-    };
-}
-
     
 export function fetchFilteredItems(term) {
-    const filtered_items = [{
-        "item": "potato masher",
-        "room": "kitchen",
-        "zone": "counter",
-        "location": "tool bucket between fridge and stove"
-    }];
+    const full_item_list = all_items();
+    const filtered_items = full_item_list.filter((row) => { return row.item === term } );
     return {
         type: FETCH_FILTERED_ITEMS,
         payload: filtered_items

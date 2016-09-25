@@ -65,7 +65,6 @@ class ResultsList extends Component {
 
 
     render () {
-        console.log("this props items", this.props.items);
         if(!this.props.items) {
             return ( <div>no table</div> );
         }
