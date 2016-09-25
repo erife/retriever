@@ -63,21 +63,25 @@ class ResultsList extends Component {
 
 
     render () {
-        return (
-                <table style={TableStyle}>
-                {this.renderHeader()}
-                <tbody>
-                {this.renderList()}
+        if(!this.props.items) {
+            return ( <div>no table</div> );
+        }
+        else {
+            return (
+                    <table style={TableStyle}>
+                    {this.renderHeader()}
+                    <tbody>
+                    {this.renderList()}
                 </tbody>
-                </table>
-            
-        );
+                    </table>
+            );
+        }
     }
 }
 
 function mapStateToProps(state) {
     return {
-        items: state.items
+        items: state.fetchResult
     };
 }
 

@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { fetchResult } from '../actions/index'
+
 
 var BoneImage = require('./bone.svg');
 
@@ -50,7 +54,10 @@ class Search extends Component {
   }
 
   onFormSubmit(event) {
-    event.preventDefault();
+      event.preventDefault();
+      console.log(this.state.term);
+      this.props.fetchResult(this.state.term);
+      this.setState({ term: ''});
   }
 
   render() {
@@ -60,13 +67,16 @@ class Search extends Component {
         <form onSubmit={this.onFormSubmit}>
         <input style={inputStyle}
       placeholder="what do you want to find?"
-      onChange={this.onInputChange}
+        value={this.state.term}
+        onChange={this.onInputChange}
         />
         </form>
         </div>
         <div style={buttonDivStyle}>
         <span>
-        <button style={buttonStyle} type="submit">Fetch!</button>
+            <button style={buttonStyle} type="submit"
+        onClick={() => this.props.fetchResult(this.state.term)}>
+            Fetch!</button>
         </span>
         </div>
         </div>
@@ -75,4 +85,7 @@ class Search extends Component {
   }
 }
 
-export default Search;
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({ fetchResult: fetchResult}, dispatch)
+}
+export default connect(null, mapDispatchToProps)(Search);
