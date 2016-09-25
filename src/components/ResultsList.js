@@ -30,6 +30,8 @@ const EvenCellStyle = {
 };
 
 class ResultsList extends Component {
+    
+
     renderHeader() {
         return (
                 <thead>
@@ -63,6 +65,7 @@ class ResultsList extends Component {
 
 
     render () {
+        console.log("this props items", this.props.items);
         if(!this.props.items) {
             return ( <div>no table</div> );
         }
@@ -81,7 +84,7 @@ class ResultsList extends Component {
 
 function mapStateToProps(state) {
     return {
-        items: state.fetchResult
+        items: state.items.filtered_items
     };
 }
 
