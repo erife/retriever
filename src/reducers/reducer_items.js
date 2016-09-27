@@ -1,52 +1,13 @@
+import item_data from '../assets/items.json';
+import location_data from '../assets/locations.json';
 export default function() {
-    return [
-        {
-            "item": "potato masher",
-            "room": "kitchen",
-            "zone": "counter",
-            "location": "tool bucket between fridge and stove"
-        },
-        {
-            "item": "wooden spoon",
-            "room": "kitchen",
-            "zone": "counter",
-            "location": "tool bucket between fridge and stove"
-        },
-        {
-            "item": "pot holder",
-            "room": "kitchen",
-            "zone": "drawers",
-            "location": "3rd drawer down"
-        },
-        {
-            "item": "massage table",
-            "room": "master bedroom",
-            "zone": "outerwall",
-            "location": "corner between closet and dresser"
-        },
-        {
-            "item": "laundry basket",
-            "room": "bedroom",
-            "zone": "outerwall",
-            "location": "nook by bathroom door"
-        },
-        {
-            "item": "go board",
-            "room": "library",
-            "zone": "pub table",
-            "location": "tabletop"
-        },
-        {
-            "item": "guitar",
-            "room": "libaray",
-            "zone": "outerwall",
-            "location": "between bookcases"
-        },
-        {
-            "item": "chromebox",
-            "room": "embers bedroom",
-            "zone": "computer desk",
-            "location": "desktop"
+    return item_data.map((data) => {
+        const location = location_data.find((row) => {return row.id === data.location_id});
+        return {
+            item: data.item,
+            room: location.room,
+            zone: location.zone,
+            location: `${location.surface_descriptor} ${location.surface} of the ${location.container_descriptor} ${location.container} `
         }
-    ]
+    });
 }

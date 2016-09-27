@@ -1,0 +1,89 @@
+[
+{"id":"1","surface_descriptor":"Top","surface":"shelf","container_descriptor":"upper","container":"cabinet","zone":"between fridge and stove","room":"kitchen","Description":"Top shelf of the upper cabinet between fridge and stove in the kitchen"}
+,
+{"id":"2","surface_descriptor":"Middle","surface":"shelf","container_descriptor":"upper","container":"cabinet","zone":"between fridge and stove","room":"kitchen","Description":"Middle shelf of the upper cabinet between fridge and stove in the kitchen"}
+,
+{"id":"3","surface_descriptor":"Bottom","surface":"shelf","container_descriptor":"upper","container":"cabinet","zone":"between fridge and stove","room":"kitchen","Description":"Bottom shelf of the upper cabinet between fridge and stove in the kitchen"}
+,
+{"id":"4","surface_descriptor":"Top","surface":"rack","container_descriptor":"lower","container":"cabinet","zone":"between fridge and stove","room":"kitchen","Description":"Top rack of the lower cabinet between fridge and stove in the kitchen"}
+,
+{"id":"5","surface_descriptor":"Bottom","surface":"rack","container_descriptor":"lower","container":"cabinet","zone":"between fridge and stove","room":"kitchen","Description":"Bottom rack of the lower cabinet between fridge and stove in the kitchen"}
+,
+{"id":"6","surface_descriptor":"Back","surface":"bamboo container","container_descriptor":"top","container":"counter","zone":"between fridge and stove","room":"kitchen","Description":"Back bamboo container of the top counter between fridge and stove in the kitchen"}
+,
+{"id":"7","surface_descriptor":"Front","surface":"bamboo container","container_descriptor":"top","container":"counter","zone":"between fridge and stove","room":"kitchen","Description":"Front bamboo container of the top counter between fridge and stove in the kitchen"}
+,
+{"id":"8","surface_descriptor":"Open","surface":"surface","container_descriptor":"top","container":"counter","zone":"between fridge and stove","room":"kitchen","Description":"Open surface of the top counter between fridge and stove in the kitchen"}
+,
+{"id":"9","surface_descriptor":"Front","surface":"bamboo container","container_descriptor":"lower","container":"drawer","zone":"between fridge and stove","room":"kitchen","Description":"Front bamboo container of the lower drawer between fridge and stove in the kitchen"}
+,
+{"id":"10","surface_descriptor":"Right","surface":"bamboo container","container_descriptor":"lower","container":"drawer","zone":"between fridge and stove","room":"kitchen","Description":"Right bamboo container of the lower drawer between fridge and stove in the kitchen"}
+,
+{"id":"11","surface_descriptor":"Open","surface":"surface","container_descriptor":"lower","container":"drawer","zone":"between fridge and stove","room":"kitchen","Description":"Open surface of the lower drawer between fridge and stove in the kitchen"}
+,
+{"id":"12","surface_descriptor":"Left","surface":"shelf","container_descriptor":"upper","container":"cabinet","zone":"above the stove","room":"kitchen","Description":"Left shelf of the upper cabinet above the stove in the kitchen"}
+,
+{"id":"13","surface_descriptor":"Right","surface":"shelf","container_descriptor":"upper","container":"cabinet","zone":"above the stove","room":"kitchen","Description":"Right shelf of the upper cabinet above the stove in the kitchen"}
+,
+{"id":"14","surface_descriptor":"Top","surface":"shelf","container_descriptor":"upper","container":"cabinet","zone":"between stove and window","room":"kitchen","Description":"Top shelf of the upper cabinet between stove and window in the kitchen"}
+,
+{"id":"15","surface_descriptor":"Middle","surface":"shelf","container_descriptor":"upper","container":"cabinet","zone":"between stove and window","room":"kitchen","Description":"Middle shelf of the upper cabinet between stove and window in the kitchen"}
+,
+{"id":"16","surface_descriptor":"Bottom","surface":"shelf","container_descriptor":"upper","container":"cabinet","zone":"between stove and window","room":"kitchen","Description":"Bottom shelf of the upper cabinet between stove and window in the kitchen"}
+,
+{"id":"17","surface_descriptor":"Right","surface":"bamboo container","container_descriptor":"lower","container":"drawer","zone":"between stove and window","room":"kitchen","Description":"Right bamboo container of the lower drawer between stove and window in the kitchen"}
+,
+{"id":"18","surface_descriptor":"Open","surface":"surface","container_descriptor":"lower","container":"drawer","zone":"between stove and window","room":"kitchen","Description":"Open surface of the lower drawer between stove and window in the kitchen"}
+,
+{"id":"19","surface_descriptor":"Top","surface":"shelf","container_descriptor":"lower","container":"cabinet","zone":"between stove and window","room":"kitchen","Description":"Top shelf of the lower cabinet between stove and window in the kitchen"}
+,
+{"id":"20","surface_descriptor":"Bottom","surface":"shelf","container_descriptor":"lower","container":"cabinet","zone":"between stove and window","room":"kitchen","Description":"Bottom shelf of the lower cabinet between stove and window in the kitchen"}
+,
+{"id":"21","surface_descriptor":"Top","surface":"shelf","container_descriptor":"right","container":"door","zone":"fridge","room":"kitchen","Description":"Top shelf of the right door fridge in the kitchen"}
+,
+{"id":"22","surface_descriptor":"Middle","surface":"shelf","container_descriptor":"right","container":"door","zone":"fridge","room":"kitchen","Description":"Middle shelf of the right door fridge in the kitchen"}
+,
+{"id":"23","surface_descriptor":"Bottom","surface":"shelf","container_descriptor":"right","container":"door","zone":"fridge","room":"kitchen","Description":"Bottom shelf of the right door fridge in the kitchen"}
+,
+{"id":"24","surface_descriptor":"Bottom","surface":"shelf","container_descriptor":"left","container":"door","zone":"fridge","room":"kitchen","Description":"Bottom shelf of the left door fridge in the kitchen"}
+,
+{"id":"25","surface_descriptor":"Top","surface":"shelf","container_descriptor":"left","container":"side","zone":"fridge","room":"kitchen","Description":"Top shelf of the left side fridge in the kitchen"}
+,
+{"id":"26","surface_descriptor":"Middle","surface":"shelf","container_descriptor":"left","container":"side","zone":"fridge","room":"kitchen","Description":"Middle shelf of the left side fridge in the kitchen"}
+,
+{"id":"27","surface_descriptor":"Bottom","surface":"shelf","container_descriptor":"left","container":"side","zone":"fridge","room":"kitchen","Description":"Bottom shelf of the left side fridge in the kitchen"}
+,
+{"id":"28","surface_descriptor":"Top","surface":"shelf","container_descriptor":"right","container":"side","zone":"fridge","room":"kitchen","Description":"Top shelf of the right side fridge in the kitchen"}
+,
+{"id":"29","surface_descriptor":"Middle","surface":"shelf","container_descriptor":"right","container":"side","zone":"fridge","room":"kitchen","Description":"Middle shelf of the right side fridge in the kitchen"}
+,
+{"id":"30","surface_descriptor":"Bottom","surface":"shelf","container_descriptor":"right","container":"side","zone":"fridge","room":"kitchen","Description":"Bottom shelf of the right side fridge in the kitchen"}
+,
+{"id":"31","surface_descriptor":"Bottom","surface":"drawer","container_descriptor":"left","container":"side","zone":"fridge","room":"kitchen","Description":"Bottom drawer of the left side fridge in the kitchen"}
+,
+{"id":"32","surface_descriptor":"Bottom","surface":"drawer","container_descriptor":"right","container":"side","zone":"fridge","room":"kitchen","Description":"Bottom drawer of the right side fridge in the kitchen"}
+,
+{"id":"33","surface_descriptor":"Bottom","surface":"drawer","container_descriptor":"middle","container":"side","zone":"fridge","room":"kitchen","Description":"Bottom drawer of the middle side fridge in the kitchen"}
+,
+{"id":"34","surface_descriptor":"Special","surface":"tray","container_descriptor":"left","container":"side","zone":"fridge","room":"kitchen","Description":"Special tray of the left side fridge in the kitchen"}
+,
+{"id":"35","surface_descriptor":"Special","surface":"tray","container_descriptor":"right","container":"side","zone":"fridge","room":"kitchen","Description":"Special tray of the right side fridge in the kitchen"}
+,
+{"id":"36","surface_descriptor":"Left","surface":"side","container_descriptor":"middle","container":"door","zone":"fridge","room":"kitchen","Description":"Left side of the middle door fridge in the kitchen"}
+,
+{"id":"37","surface_descriptor":"Right","surface":"side","container_descriptor":"middle","container":"door","zone":"fridge","room":"kitchen","Description":"Right side of the middle door fridge in the kitchen"}
+,
+{"id":"38","surface_descriptor":"Middle","surface":"side","container_descriptor":"middle","container":"door","zone":"fridge","room":"kitchen","Description":"Middle side of the middle door fridge in the kitchen"}
+,
+{"id":"39","surface_descriptor":"Top","surface":"shelf","container_descriptor":"lower","container":"door","zone":"fridge","room":"kitchen","Description":"Top shelf of the lower door fridge in the kitchen"}
+,
+{"id":"40","surface_descriptor":"Middle","surface":"shelf","container_descriptor":"lower","container":"door","zone":"fridge","room":"kitchen","Description":"Middle shelf of the lower door fridge in the kitchen"}
+,
+{"id":"41","surface_descriptor":"Left","surface":"bottom","container_descriptor":"lower","container":"door","zone":"fridge","room":"kitchen","Description":"Left bottom of the lower door fridge in the kitchen"}
+,
+{"id":"42","surface_descriptor":"Middle","surface":"bottom","container_descriptor":"lower","container":"door","zone":"fridge","room":"kitchen","Description":"Middle bottom of the lower door fridge in the kitchen"}
+,
+{"id":"43","surface_descriptor":"Right","surface":"bottom","container_descriptor":"lower","container":"door","zone":"fridge","room":"kitchen","Description":"Right bottom of the lower door fridge in the kitchen"}
+,
+{"id":"44","surface_descriptor":"Front","surface":"bottom","container_descriptor":"lower","container":"door","zone":"fridge","room":"kitchen","Description":"Front bottom of the lower door fridge in the kitchen"}
+]
